@@ -1,0 +1,377 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Mitr;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--azul)
+}
+:root{
+    --azul:#003C5A;
+    --preto:#000000;
+    --branco:#FFFFFF;
+    --cinza:#1e1e1e; 
+/* ...existing code... */
+
+/* Responsividade para telas até 1024px */
+@media (max-width: 1024px) {
+.galeria-produtos {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.produto, figure {
+    width: 350px;
+    height: 400px;
+}
+.container img {
+    width: 400px;
+    height: 350px;
+}
+}
+
+/* Responsividade para telas até 768px (celular/tablet) */
+@media (max-width: 768px) {
+header {
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+}
+nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+.botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+.galeria-produtos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 10px;
+}
+.produto, figure {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    min-height: 300px;
+}
+#pagina1 h1 {
+    font-size: 38px;
+    padding: 40px 10px 0px;
+}
+#pagina1 p {
+    font-size: 18px;
+    padding: 30px 0px 0px 10px;
+}
+#pagina1 button {
+    font-size: 16px;
+    padding: 18px 20px;
+    margin: 30px 10px;
+}
+#produtos h3 {
+    font-size: 24px;
+    margin-top: 80px;
+}
+#produtos p {
+    font-size: 16px;
+    padding: 10px;
+}
+.container {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    gap: 20px;
+    padding: 10px;
+}
+.container img {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+}
+.container span {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 95vw;
+    padding: 0 10px;
+}
+footer {
+    padding: 10px;
+    margin-top: 20px;
+}
+.botoesfooter {
+    gap: 10px;
+}
+}
+
+/* Imagens sempre responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+}
+body, html {
+    height: 100%;
+    background-color: #000e1e;
+    color: white;
+    background: url('../assets/img/imagemdefundo.svg') no-repeat center center/cover;
+}
+header{
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 36px;
+}
+nav{
+    display: flex;
+    gap: 55px;
+    padding:30px 55px 18px 250px;
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--azul);
+}
+.navbar:hover{
+    transform: scale(1.05) translateY(-3px);
+    transition:0.5s;
+    font-weight: 500;
+}
+.botoes a{
+    display:inline;
+    gap: 16px; 
+    border: none;
+    background: transparent;
+    padding: 16px 25px;
+    cursor:pointer;
+}
+.botoes a img{
+    width: 50px;
+    height: 55px;
+} 
+.botoes{
+    transition:transform 1s;
+}
+.botoes :hover{
+    transform: scaleX(1.05) scaleY(1.05) translateY(-5px) translateY(-5px);
+    transition: 0.8s; 
+}
+.redessociais .imghover {
+    display: none;
+}
+.redessociais:hover .imgnormal {
+    display: none;
+}
+.redessociais:hover .imghover {
+    display: inline;
+}
+
+#pagina1 h1 span {
+    display: block;
+    margin-left: 10px;
+}
+#pagina1 h1{
+    font-size: 78px;
+    font-weight:lighter;
+    padding: 105px 26px 0px;
+    line-height: 1.0;
+}
+#pagina1 p{
+    font-size: 24px;
+    padding: 70px 0px 0px 44px;
+    line-height: 1.2;
+}
+
+#pagina1 button{
+    background-color: var(--azul);
+    border: none;
+    color: var(--branco);
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 30px 35px;
+    margin: 55px 44px;
+    cursor: pointer;
+    transition:transform 1s;
+    font-weight: normal;
+}
+#pagina1 button:hover{
+    background-color: #056291;
+    color: var(--branco );
+    font-weight: 400;
+    transform: scaleX(1.05) scaleY(1.05) translateY(-5px) translateY(-5px);
+    transition: 0.8 s;
+}
+#produtos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.produto, figure{
+    width: 500px;
+    height: 600px;
+}
+#produtos h3{
+    font-size:35px;
+    font-weight:500;  
+    margin-top: 250px;
+}
+#produtos p{
+    font-size:22px;
+    padding: 17px ;
+    text-align: center;
+}
+.galeria-produtos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 120px;
+    justify-items: center;
+    margin-top: 29px
+}
+.galeria-produtos h2{
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 25px;
+    font-weight:lighter;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0px;
+}
+
+figure{
+    position: relative;
+    overflow: hidden; /*limita tudo oq está dentro da div/tag/elemento, nesse caso, está limitando tudo oq está dentro do figure*/
+}
+figure img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--branco);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s;
+    z-index: 1;
+    padding-top: 150px;
+}
+figure:hover .overlay{
+    opacity: 1;
+}
+
+.overlay p {
+    font-size: 20px;
+    background-color: var(--branco);
+    border:var(--azul) 5px solid;
+    color: var(--azul);
+    text-align: center;
+    width: 274px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acoes img{
+    width: 28px;
+    height: 28px;
+}
+.acoes img, button {
+    display: inline;
+}
+.acoes{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0px;
+    gap: 10px;
+}
+.acoes button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px 8px;
+    font-size: 22px;
+    font-weight:500;
+    color: var(--branco);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.compartilhe, .contato{
+    display: flex;
+    align-items: center;
+
+}
+
+.overlay p:hover{
+    background-color: var(--azul);
+    color: var(--branco);
+    transform:scale(1.05) translateY(-5px) translateY(-5px);
+    transition: 1s;   
+}
+#pagina3 h3{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 79px;
+}
+#pagina3 p{
+    text-align: center;
+    font-size: 22px;
+    padding: 17px;
+}
+.container {
+    display: flex;
+    align-items: center;      /* centraliza verticalmente */
+    justify-content: flex-start;
+    min-height: 900px;        /* aumenta o espaço vertical */
+    gap: 40px;                /* espaço entre imagem e texto */
+    background-color: var(--azul);
+    margin-top: 40px;
+}
+.container img {
+    width: 890px; 
+    height: 800px;     
+    display: block;
+}
+.container span {
+    font-size: 19px;
+    line-height: 44px;
+    color: var(--preto);
+    text-align: justify;
+    word-break: break-word;
+    max-width: 700px;
+    color: var(--branco);
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--azul);
+    margin-top: 50px;
+}
+footer p{
+    color: var(--branco);
+    text-align: center;
+    font-size: 11px;
+}
+.botoesfooter {
+    align-items: center;
+    gap: 16px;
+}

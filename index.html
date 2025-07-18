@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scr/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./scr/assets/img/iconlogo.svg" type="image/svg+xml">
+    
+    <title>Laguna</title>
+</head>
+
+<body>
+    <header>
+    <div class="logo">
+        <a href="index.html"> <img src="./scr/assets/img/logo.svg" alt="Logo Laguna"></a>
+    </div>
+    <nav>
+        <a class="navbar" href="index.html">HOME</a>
+        <a class="navbar" href="#pagina2">PRODUTOS</a>
+        <a class="navbar" href="#pagina3">QUEM SOMOS NÓS</a>
+    </nav>
+    <div class="botoes"> 
+        <a class="redessociais" href="https://www.instagram.com/laguna.croche?      utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+        <img class="imgnormal" src="scr/assets/img/botão instagram.svg" alt="Ir para o Instagram">
+        <img class="imghover" src="scr/assets/img/botaohover.svg" alt="Instagram">
+        </a>
+        <a class="redessociais" href="https://www.tiktok.com/@laguna.croche?_t=ZM-8xhyJknsFNA&_r=1" target="_blank" rel="noopener noreferrer">
+        <img class="imgnormal" src="scr/assets/img/botão tiktok.svg" alt="Ir para o Tiktok">
+        <img class="imghover" src="scr/assets/img/botaohoverttk.svg" alt="Tiktok">
+        </a>
+        <a class="redessociais" href="https://www.facebook.com/p/Laguna-Croch%C3%AA-61572802733598/" target="_blank" rel="noopener noreferrer">
+        <img class="imgnormal" src="scr/assets/img/botão facebook.svg " alt="Ir para o Facebook">
+        <img class="imghover" src="scr/assets/img/botaohoverface.svg" alt="Facebook" >
+        </a>    
+    </div>
+</header>
+    <main>
+        <section id="pagina1">
+            <div class="conteudo-central">
+                <h1>
+                    Transformando<br>
+                    <span>Linhas em arte</span>
+                </h1>
+                <p>Peças únicas feitas à mão, carregadas <br>
+                    <span>de cuidado, criatividade e alma.</span>
+                </p>
+                <a href="#pagina2"><button>Conheça nossos produtos</button></a>
+            </div>
+        </section>
+        <section id="pagina2">
+            <div id="produtos">
+                <h3>Algum dos nossos produtos</h3>
+                <p>Nossos produtos são feitos artesanalmente e com muito carinho<br>
+                    <span>para atender as suas necessidades!</span>
+                </p>
+            </div>
+                <!-- Seção principal da galeria de produtos -->
+                <section class="galeria-produtos" aria-label="Galeria de Produtos em Crochê">
+                    <!-- Cada produto é uma seção independente com significado próprio -->
+                    <section class="produto" aria-label="Top Pérola">
+                        <!-- Agrupa imagem com legenda de forma semântica -->
+                        <figure>
+                            <!-- Imagem do produto com descrição acessível para leitores de tela -->
+                            <img src="scr/assets/img/top perola.svg" alt="Top de crochê branco chamado Pérola" />
+                            <!-- Legenda da imagem com sobreposição visível no hover -->
+                            <figcaption class="overlay">
+                                <!-- Pergunta visível no efeito hover -->
+                                <p>Gostou?</p>
+                                <!-- Bloco de botões com ações, tratado como navegação auxiliar -->
+                                <nav class="acoes">
+                                    <!-- Botões para interação do usuário -->
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <img src="scr/assets/img/telefone.svg" alt="">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                            <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <!-- Nome do produto como título semântico (melhor que <p>) -->
+                        <h2 class="titulo">Top Pérola</h2>
+                    </section>
+                    <!-- Segundo produto com a mesma estrutura -->
+                    <section class="produto" aria-label="Vestido Oceano">
+                        <figure>
+                            <img src="scr/assets/img/vestido oceano.svg" alt="Vestido azul claro de crochê chamado Oceano" />
+                            <figcaption class="overlay">
+                                <p>Gostou?</p>
+                                <nav class="acoes">
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <img src="scr/assets/img/telefone.svg" alt="">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                        <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <h2 class="titulo">Vestido Oceano</h2>
+                    </section>
+                    <!-- Terceiro produto com essa estrutura -->
+                    <section class="produto" aria-labe="Conjunto Estrela">
+                        <figure>
+                            <img src="scr/assets/img/conjunto estrela.svg" alt="Conjunto azul escuro de crochê chamado estrela">
+                            <figcaption class="overlay">
+                                <p>Gostou?</p>
+                                <nav class="acoes">
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <img src="scr/assets/img/telefone.svg" alt="">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                        <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <h2 class="titulo">Conjunto Estrela</h2>
+                    </section>
+                    <!-- Quarto produto com a mesma estrutura -->
+                    <section class="produtos" aria-label="Top Arraia">
+                        <figure>
+                            <img src="scr/assets/img/top arraia.svg " alt="Top de crochê off white chamado Arraia">
+                            <figcaption class="overlay">
+                                <p>Gostou?</p>
+                                <nav class="acoes">                         
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                        <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <h2 class="titulo">Top Arraia</h2>
+                    </section>
+                    <!-- Quinto produto com a mesma estrutura -->
+                        <section class="produtos" aria-label="Vestido Sereia">
+                        <figure>
+                            <img src="scr/assets/img/vestido sereia.svg" alt="Vestido de crochê com cores vibrantes chamado Sereia">
+                            <figcaption class="overlay">
+                                <p>Gostou?</p>
+                                <nav class="acoes">
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                        <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <h2 class="titulo">Vestido Sereia</h2>
+                    </section>
+                    <section class="produtos" aria-label="Top Sol">
+                        <figure>
+                            <img src="scr/assets/img/top sol.svg" alt="Top de crochê em tons de azul chamado Sol">
+                            <figcaption class="overlay">
+                                <p>Gostou?</p>
+                                <nav class="acoes">
+                                    <div class="compartilhe">
+                                        <img src="scr/assets/img/compartilhe.svg" alt="">
+                                        <button type="button">Compartilhe</button>
+                                    </div>
+                                    <div class="contato">
+                                        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+                                        <button type="button">Entre em contato</button></a>
+                                    </div>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                        <h2 class="titulo">Top Sol</h2>
+                    </section>
+                </section>
+        </section>
+        <section id="pagina3">
+            <h3>Quem somos nós?</h3>
+            <p>Um pouco sobre A Laguna.</p>
+            <div class="container">
+                <img src="scr/assets/img/crochetando.svg" alt="Imagem de uma pessoa crochetando">
+                <span>Olá! Eu sou a Bianca, a fundadora da Laguna Crochê. Desde pequena, sempre fui apaixonada pelas artes e pela liberdade de criar com as próprias mãos. Entre pincéis, linhas e agulhas, foi no crochê que encontrei uma forma única de expressar minha criatividade e carinho. 
+                A escolha do nome Laguna vem da minha profunda conexão com o oceano e com a água e elementos que me inspiram como sua calma, fluidez e beleza natural. A  Laguna Crochê nasceu do desejo de transformar fios e ideias em peças únicas e cheias de significado. Em janeiro de 2025, essa paixão ganhou forma em uma marca pensada com amor, dedicação e atenção aos detalhes. Aqui, cada produto é feito à mão, com muito cuidado e sempre levando em conta o gosto e as necessidades de cada cliente. A Laguna Crochê é mais do que uma loja: é um espaço onde o artesanal se encontra com o afeto. 
+                Seja bem-vindo(a) ao nosso universo feito de fios, sonhos e muita inspiração!</span>
+            </div>
+                
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="botoesfooter">
+        <a href="https://www.instagram.com/laguna.croche?      utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> <img src="scr/assets/img/instafooter.svg" alt="acesso ao insta do laguna">
+        </a>
+
+        <a href="https://www.tiktok.com/@laguna.croche?_t=ZM-8xhyJknsFNA&_r=1" target="_blank" rel="noopener noreferrer"> 
+        <img src="scr/assets/img/tiktokfooter.svg" alt="acesso ao tiktok do laguna">
+        </a>
+
+        <a href="https://www.facebook.com/p/Laguna-Croch%C3%AA-61572802733598/" 
+        target="_blank" rel="noopener noreferrer">
+        <img src="scr/assets/img/facebookfooter.svg" alt="acesso ao facebook do laguna">
+        </a>
+
+        <a href="https://wa.me/5511997222982" target="_blank" rel="noopener noreferrer">
+        <img src="scr/assets/img/whatsappfooter.svg" alt="acesso ao whatsapp do laguna"> 
+        </a> 
+    </div>
+    <p>Copyright © 2025-2030 - Giovanna Lima, Maria Clara, Matheus Alves All - Allrights reserved.</p>
+</footer>
+</html>
